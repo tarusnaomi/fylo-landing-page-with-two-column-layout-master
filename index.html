@@ -15,14 +15,7 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -117,24 +110,52 @@
             id="email"
             placeholder="example@email.com"
           />
-          <button type="submit">Get Started</button>
+          <button type="submit">Get Started for free</button>
         </form>
       </section>
     </main>
     <footer>
-      <div>
-        <img src="/images/logo.svg" />
-        <div>
-          <img src="/images/icon-phone.svg" alt="phone-icon" />
+      <div class="links">
+        <img src="/images/logo-white.svg" />
+        <a href="tel:+1-543-123-4567">
+          <img src="images/icon-phone.svg" alt="phone-icon" />
           <span>Phone: +1-543-123-4567</span>
-        </div>
+        </a>
+        <a href="mailto:example@fylo.com">
+          <img src="/images/icon-email.svg" alt="email-icon" />
+          <span>example@fylo.com</span>
+        </a>
       </div>
-      <div>
-        <img src="/images/icon-email.svg" alt="email-icon" />
-        <div>example@fylo.com</div>
+      <div class="links">
+        <a href="#">About Us</a>
+        <a href="#">Jobs</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
       </div>
-      <div>About Us Jobs Press Blog</div>
-      <div>Contact Us Terms Privacy</div>
+      <div class="links">
+        <a href="#">Contact Us </a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="socials">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
