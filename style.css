@@ -83,6 +83,9 @@ header a:hover {
   width: 100%;
   display: block;
 }
+#curved-bg-desktop img {
+  display: none;
+}
 .wherever-you-are h2 {
   font-size: 18px;
   margin-top: 40px;
@@ -173,4 +176,65 @@ footer .links a {
 footer .socials {
   width: fit-content;
   margin: 10px auto;
+}
+/* desktop media queries */
+@media screen and (min-width: 750px) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .cta-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cta-form input[type="text"] {
+    width: 65%;
+  }
+  .cta-form input[type="submit"] {
+    width: 33%;
+  }
+  #curved-bg-mobile img {
+    display: none;
+  }
+  #curved-bg-desktop img {
+    width: 100%;
+    display: block;
+  }
+  .wherever-you-are {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .wherever-you-are .card {
+    width: 60%;
+  }
+  .Section-text {
+    text-align: left;
+  }
+  .early-access {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  .early-access > * {
+    flex: 1;
+  }
+
+  .early-access .Section-form input,
+  .early-access .Section-form button {
+    margin: 20px 0;
+  }
+  .early-access .Section-form button {
+    width: fit-content;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer > div {
+    flex: 1;
+  }
 }
